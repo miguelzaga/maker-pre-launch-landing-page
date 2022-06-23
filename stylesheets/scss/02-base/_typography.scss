@@ -1,0 +1,6 @@
+@use "./../01-abstracts/" as a;
+
+body {
+    font-family: a.$font;
+}
+
