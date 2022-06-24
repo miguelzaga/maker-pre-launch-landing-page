@@ -1,5 +1,6 @@
 @use "./../01-abstracts/" as a;
 
 body {
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-1);
+    color: var(--color-font-1);
 }

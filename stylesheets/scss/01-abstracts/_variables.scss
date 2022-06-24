@@ -1,10 +1,17 @@
 // Colors
 :root {
-    --color-bg: #fff;
+    --color-bg-1: #080C20;
+    --color-bg-2: #093F68;
+    --color-font-1:  #fff;
+    --color-font-2:  #777f98;
+    --color-highlight: #3ee9e5;
+    --color-error: #ff2965;
 }
 
 // Fonts
-$font: "Manrope", sans-serif;
+$font-family: "Manrope", sans-serif;
+$font-medium: 400;
+$font-bold: 800;
 
 // Breakpoints
 $sm: 320px;

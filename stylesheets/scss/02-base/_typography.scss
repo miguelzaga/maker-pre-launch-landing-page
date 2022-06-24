@@ -1,6 +1,34 @@
 @use "./../01-abstracts/" as a;
 
 body {
-    font-family: a.$font;
+    font-family: a.$font-family;
+    font-weight: a.$font-medium;
+    font-size: a.rem(15px);
+    line-height: 25px;
 }
 
+h1 {
+    font-size: a.rem(48px);
+    line-height: 56px;
+    font-weight: a.$font-bold;
+}
+
+
+h2 {
+    font-size: a.rem(40px);
+    line-height: 55px;
+    font-weight: a.$font-bold;
+    
+}
+
+h3 {
+    font-size: a.rem(32px);
+    line-height: 44px;
+    font-weight: a.$font-bold;    
+}
+
+h4 {
+    font-size: a.rem(18px);
+    line-height: 25px;
+    font-weight: a.$font-bold;    
+}

@@ -134,11 +134,17 @@ table {
 }
 
 :root {
-  --color-bg: #fff;
+  --color-bg-1: #080C20;
+  --color-bg-2: #093F68;
+  --color-font-1: #fff;
+  --color-font-2: #777f98;
+  --color-highlight: #3ee9e5;
+  --color-error: #ff2965;
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-1);
+  color: var(--color-font-1);
 }
 
 html {
@@ -164,6 +170,33 @@ svg {
 
 body {
   font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 56px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 55px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 44px;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 25px;
+  font-weight: 800;
 }
 
 .br::after {
