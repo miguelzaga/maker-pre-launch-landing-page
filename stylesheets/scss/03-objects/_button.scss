@@ -1,1 +1,20 @@
 @use "../01-abstracts/" as a;
+
+.button {
+    color: var(--color-btn);
+    background-color: var(--color-highlight);
+    border: 2px solid var(--color-highlight);
+    border-radius: 24px;
+    padding: 12px 18px;
+    font-weight: a.$font-bold;
+    min-width: 140px;
+    height: 48px;
+    line-height: 1;
+    transition: 0.2s ease-out;
+
+    &:hover,
+    &:active {
+        background-color: transparent;
+        color: var(--color-font-1);
+    }
+}

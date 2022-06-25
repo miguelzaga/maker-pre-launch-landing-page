@@ -1,6 +1,7 @@
 @use "./../01-abstracts/" as a;
 
-body {
+body,
+button {
     font-family: a.$font-family;
     font-weight: a.$font-medium;
     font-size: a.rem(15px);
@@ -13,22 +14,20 @@ h1 {
     font-weight: a.$font-bold;
 }
 
-
 h2 {
     font-size: a.rem(40px);
     line-height: 55px;
     font-weight: a.$font-bold;
-    
 }
 
 h3 {
     font-size: a.rem(32px);
     line-height: 44px;
-    font-weight: a.$font-bold;    
+    font-weight: a.$font-bold;
 }
 
 h4 {
     font-size: a.rem(18px);
     line-height: 25px;
-    font-weight: a.$font-bold;    
+    font-weight: a.$font-bold;
 }
