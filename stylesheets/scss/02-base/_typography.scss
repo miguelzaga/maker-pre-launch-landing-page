@@ -1,7 +1,8 @@
 @use "./../01-abstracts/" as a;
 
 body,
-button {
+button,
+input {
     font-family: a.$font-family;
     font-weight: a.$font-medium;
     font-size: a.rem(15px);

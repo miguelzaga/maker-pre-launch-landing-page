@@ -170,7 +170,8 @@ svg {
 }
 
 body,
-button {
+button,
+input {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 0.9375rem;
@@ -216,6 +217,29 @@ h4 {
 .button:hover, .button:active {
   background-color: transparent;
   color: var(--color-font-1);
+}
+
+.text-field {
+  color: var(--color-font-1);
+  background-color: var(--color-bg-2);
+  border: solid 2px transparent;
+  border-radius: 24px;
+  padding: 12px 18px;
+  font-weight: 800;
+  min-width: 320px;
+  height: 48px;
+  line-height: 1;
+  transition: 0.2s ease-out;
+}
+.text-field::placeholder {
+  color: var(--color-font-1);
+  opacity: 0.4;
+}
+.text-field--success {
+  border-color: var(--color-highlight);
+}
+.text-field--error {
+  border-color: var(--color-error);
 }
 
 .br::after {
