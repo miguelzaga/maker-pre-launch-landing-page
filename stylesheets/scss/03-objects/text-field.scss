@@ -1,28 +1,44 @@
 @use "../01-abstracts/" as a;
 
 .text-field {
-    color: var(--color-font-1);
-    background-color: var(--color-bg-2);
-    border: solid 2px transparent;
-
-    border-radius: 24px;
-    padding: 12px 18px;
-    font-weight: a.$font-bold;
-    min-width: 320px;
-    height: 48px;
-    line-height: 1;
-    transition: a.$transition;
-
-    &::placeholder {
+    &__input {
         color: var(--color-font-1);
-        opacity: 0.4;
+        background-color: var(--color-bg-2);
+        border: solid 2px transparent;
+        border-radius: 24px;
+        padding: 12px 18px;
+        font-weight: a.$font-bold;
+        min-width: 320px;
+        height: 48px;
+        line-height: 1;
+        transition: a.$transition;
+
+        &::placeholder {
+            color: var(--color-font-1);
+            opacity: 0.4;
+        }
     }
 
     &--success {
-        border-color: var(--color-highlight);
+        & .text-field__input {
+            border-color: var(--color-highlight);
+        }
     }
-    
+
     &--error {
-        border-color: var(--color-error);
+        &::after {
+            content: "Oops! That doesn’t look like an email address";
+            display: block;
+            margin-left: 18px;
+            margin-top: 4px;
+            color: var(--color-error);
+            font-weight: 500;
+            font-size: a.rem(12px);
+            line-height: 25px;
+        }
+
+        & .text-field__input {
+            border-color: var(--color-error);
+        }
     }
 }

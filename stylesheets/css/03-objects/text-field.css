@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-bg-1: #080c20;
   --color-bg-2: #093f68;
@@ -8,7 +9,7 @@
   --color-error: #ff2965;
 }
 
-.text-field {
+.text-field__input {
   color: var(--color-font-1);
   background-color: var(--color-bg-2);
   border: solid 2px transparent;
@@ -20,14 +21,24 @@
   line-height: 1;
   transition: 0.2s ease-out;
 }
-.text-field::placeholder {
+.text-field__input::placeholder {
   color: var(--color-font-1);
   opacity: 0.4;
 }
-.text-field--success {
+.text-field--success .text-field__input {
   border-color: var(--color-highlight);
 }
-.text-field--error {
+.text-field--error::after {
+  content: "Oops! That doesn’t look like an email address";
+  display: block;
+  margin-left: 18px;
+  margin-top: 4px;
+  color: var(--color-error);
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 25px;
+}
+.text-field--error .text-field__input {
   border-color: var(--color-error);
 }
 
