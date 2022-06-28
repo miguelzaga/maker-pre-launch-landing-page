@@ -1,0 +1,34 @@
+@use "../01-abstracts/" as a;
+
+.grid {
+    margin: auto 24px 144px;
+    display: flex;
+    flex-flow: column nowrap;    
+    gap: 56px;
+
+    &__cell {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-bg-2);
+        margin: auto auto 32px;
+        width: 120px;
+        height: 124px;
+        border-radius: 45px;
+        
+        &-svg {
+            width: 66px;
+            height: 80px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 11px;
+    }
+}

@@ -286,6 +286,35 @@ h4 {
   margin-bottom: 32px;
 }
 
+.grid {
+  margin: auto 24px 144px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 56px;
+}
+.grid__cell {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+.grid__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-2);
+  margin: auto auto 32px;
+  width: 120px;
+  height: 124px;
+  border-radius: 45px;
+}
+.grid__img-svg {
+  width: 66px;
+  height: 80px;
+}
+.grid__title {
+  margin-bottom: 11px;
+}
+
 .br::after {
   content: "\a";
   white-space: pre;
