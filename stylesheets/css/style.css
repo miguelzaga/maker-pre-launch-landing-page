@@ -253,6 +253,11 @@ h4 {
   border-color: var(--color-error);
 }
 
+.header {
+  text-align: center;
+  margin: 40px auto 65.5px;
+}
+
 .br::after {
   content: "\a";
   white-space: pre;
