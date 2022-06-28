@@ -1,8 +1,12 @@
 .br::after {
     content: "\a";
     white-space: pre;
-  }
+}
 
-  .hidden {
+.hidden {
     display: none;
-  }
+}
+
+.highlight {
+  color: var(--color-highlight)
+}

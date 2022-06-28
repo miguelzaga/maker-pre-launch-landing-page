@@ -144,9 +144,11 @@ table {
   --color-error: #ff2965;
 }
 
+html,
 body {
   background-color: var(--color-bg-1);
   color: var(--color-font-1);
+  overflow-x: hidden;
 }
 
 html {
@@ -179,10 +181,20 @@ input {
   line-height: 25px;
 }
 
+p {
+  color: var(--color-font-2);
+}
+
 h1 {
-  font-size: 3rem;
-  line-height: 56px;
+  font-size: 2rem;
+  line-height: 40px;
   font-weight: 800;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 56px;
+  }
 }
 
 h2 {
@@ -258,6 +270,22 @@ h4 {
   margin: 40px auto 65.5px;
 }
 
+.hero {
+  margin: auto 24px 144px;
+  text-align: center;
+}
+.hero__img {
+  min-width: 410px;
+  margin-bottom: 47.5px;
+}
+.hero__title {
+  max-width: 250px;
+  margin: auto auto 23px;
+}
+.hero__text {
+  margin-bottom: 32px;
+}
+
 .br::after {
   content: "\a";
   white-space: pre;
@@ -265,6 +293,10 @@ h4 {
 
 .hidden {
   display: none;
+}
+
+.highlight {
+  color: var(--color-highlight);
 }
 
 /*# sourceMappingURL=style.css.map */

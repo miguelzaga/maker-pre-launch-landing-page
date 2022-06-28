@@ -1,0 +1,20 @@
+@use "../01-abstracts/" as a;
+
+.hero{
+    margin: auto 24px 144px;
+    text-align: center;
+    
+    &__img {
+        min-width: 410px;
+        margin-bottom: 47.5px;
+    }
+
+    &__title {
+        max-width: 250px;
+        margin: auto auto 23px;
+    }
+
+    &__text {
+        margin-bottom: 32px;
+    }
+}
