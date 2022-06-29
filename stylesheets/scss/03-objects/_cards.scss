@@ -1,6 +1,7 @@
 @use "../01-abstracts/" as a;
 
 @mixin card {
+    position: relative;
     padding: 49px 29px 32px 30px;
     border-radius: 8px;
 
@@ -16,26 +17,60 @@
         &__msg {
             margin-bottom: 19px;
         }
+
+        &__list {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 12px;
+            list-style-image: url(../../assets/icon-check.svg);
+            padding-inline-start: 25px;
+            
+            &-li {
+                padding-inline-start: 10px;
+            }
+        }
+
+        &__img {
+            position: absolute;
+        }
     }
 }
 
 .card-1 {
+    // Offseting for the img
+    margin-bottom: 23px;
+    top: 23px;
+
     @include card();
     background-color: var(--color-bg-2);
 
-    & .card__text {
-        color: var(--color-font-1);
+    & .card {
+        &__text {
+            color: var(--color-font-1);
+        }
+
+        &__list {
+            list-style-image: url(../../assets/icon-check--light.svg);
+        }
+
+        &__img {
+            top: -23px;
+            left: 30px;
+        }
     }
 }
 
 .card-2 {
+    // Offseting for the img
+    margin-bottom: 33px;
+    top: 33px;
+
     @include card();
     padding-top: 61px;
     background-color: var(--color-bg-3);
     color: var(--color-font-3);
 
     & .card {
-
         &__text {
             color: var(--color-font-3);
         }
@@ -43,8 +78,13 @@
         &__msg-small {
             font-size: a.rem(15px);
             font-weight: 500;
-            vertical-align: middle;
+            vertical-align: text-top;
             margin-left: 7.5px;
+        }
+
+        &__img {
+            top: -33px;
+            left: 30px;
         }
     }
 }
