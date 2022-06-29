@@ -1,2 +1,22 @@
 @use "../01-abstracts/" as a;
 
+.footer {
+    position: relative;
+    margin: auto 24px 164px;
+    z-index: 1;
+
+    &__title {
+        text-align: center;
+        max-width: 250px;
+        margin: auto auto 31px;
+    }
+
+    &__bg {
+        position: absolute;
+        z-index: -1;
+        width: unset;
+        max-width: 584px;
+        top: 0;
+        left: calc((584px - 100%) / (-2));
+    }
+}
