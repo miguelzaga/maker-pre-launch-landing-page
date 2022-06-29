@@ -137,8 +137,10 @@ table {
 :root {
   --color-bg-1: #080c20;
   --color-bg-2: #093f68;
+  --color-bg-3: #3ee9e5;
   --color-font-1: #fff;
   --color-font-2: #777f98;
+  --color-font-3: #080c20;
   --color-btn: #093f68;
   --color-highlight: #3ee9e5;
   --color-error: #ff2965;
@@ -204,9 +206,15 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
-  line-height: 44px;
   font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 33px;
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 2rem;
+    line-height: 44px;
+  }
 }
 
 h4 {
@@ -265,14 +273,62 @@ h4 {
   border-color: var(--color-error);
 }
 
+.card-1 {
+  padding: 49px 29px 32px 30px;
+  border-radius: 8px;
+  background-color: var(--color-bg-2);
+}
+.card-1 .card__title {
+  margin-bottom: 19px;
+}
+.card-1 .card__text {
+  margin-bottom: 26px;
+}
+.card-1 .card__msg {
+  margin-bottom: 19px;
+}
+.card-1 .card__text {
+  color: var(--color-font-1);
+}
+
+.card-2 {
+  padding: 49px 29px 32px 30px;
+  border-radius: 8px;
+  padding-top: 61px;
+  background-color: var(--color-bg-3);
+  color: var(--color-font-3);
+}
+.card-2 .card__title {
+  margin-bottom: 19px;
+}
+.card-2 .card__text {
+  margin-bottom: 26px;
+}
+.card-2 .card__msg {
+  margin-bottom: 19px;
+}
+.card-2 .card__text {
+  color: var(--color-font-3);
+}
+.card-2 .card__msg-small {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  vertical-align: middle;
+  margin-left: 7.5px;
+}
+
 .header {
   text-align: center;
   margin: 40px auto 65.5px;
 }
 
 .hero {
-  margin: auto 24px 144px;
+  margin-bottom: 144px;
   text-align: center;
+}
+.hero__container {
+  margin-left: 24px;
+  margin-right: 24px;
 }
 .hero__img {
   min-width: 410px;
@@ -313,6 +369,23 @@ h4 {
 }
 .grid__title {
   margin-bottom: 11px;
+}
+
+.cards {
+  margin: auto 24px 144px;
+}
+.cards__title {
+  text-align: center;
+  margin-bottom: 27px;
+}
+.cards__text {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.cards__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 32px;
 }
 
 .br::after {

@@ -31,9 +31,14 @@ h2 {
 }
 
 h3 {
-    font-size: a.rem(32px);
-    line-height: 44px;
     font-weight: a.$font-bold;
+    font-size: a.rem(24px);
+    line-height: 33px;
+
+    @include a.breakpoint(a.$lg) {
+        font-size: a.rem(32px);
+        line-height: 44px;
+    }
 }
 
 h4 {

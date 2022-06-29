@@ -1,0 +1,50 @@
+@use "../01-abstracts/" as a;
+
+@mixin card {
+    padding: 49px 29px 32px 30px;
+    border-radius: 8px;
+
+    & .card {
+        &__title {
+            margin-bottom: 19px;
+        }
+
+        &__text {
+            margin-bottom: 26px;
+        }
+
+        &__msg {
+            margin-bottom: 19px;
+        }
+    }
+}
+
+.card-1 {
+    @include card();
+    background-color: var(--color-bg-2);
+
+    & .card__text {
+        color: var(--color-font-1);
+    }
+}
+
+.card-2 {
+    @include card();
+    padding-top: 61px;
+    background-color: var(--color-bg-3);
+    color: var(--color-font-3);
+
+    & .card {
+
+        &__text {
+            color: var(--color-font-3);
+        }
+
+        &__msg-small {
+            font-size: a.rem(15px);
+            font-weight: 500;
+            vertical-align: middle;
+            margin-left: 7.5px;
+        }
+    }
+}

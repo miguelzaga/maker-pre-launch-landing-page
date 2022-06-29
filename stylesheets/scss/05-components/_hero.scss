@@ -1,8 +1,13 @@
 @use "../01-abstracts/" as a;
 
 .hero{
-    margin: auto 24px 144px;
+    margin-bottom: 144px;
     text-align: center;
+
+    &__container {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
     
     &__img {
         min-width: 410px;
