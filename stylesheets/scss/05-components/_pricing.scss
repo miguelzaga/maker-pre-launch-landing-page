@@ -1,6 +1,6 @@
 @use "../01-abstracts/" as a;
 
-.cards {
+.pricing {
     margin: auto 24px 144px;
 
     &__title {
@@ -10,12 +10,21 @@
 
     &__text {
         text-align: center;
-        margin-bottom: 56px;
+        max-width: 573px;
+        margin: auto auto 56px;
     }
 
     &__wrapper {
         display: flex;
         flex-flow: column nowrap;
+        align-items: center;
         gap: 32px;
+        max-width: 445px;
+        margin: auto;
+    }
+
+    @include a.breakpoint(a.$md) {
+        margin-bottom: 119px;
+
     }
 }

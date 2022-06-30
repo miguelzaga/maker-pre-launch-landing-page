@@ -304,6 +304,11 @@ h4 {
 .card-1 .card__img {
   position: absolute;
 }
+@media (min-width: 640px) {
+  .card-1 {
+    padding: 49px 38px 48px;
+  }
+}
 .card-1 .card__text {
   color: var(--color-font-1);
 }
@@ -347,6 +352,11 @@ h4 {
 .card-2 .card__img {
   position: absolute;
 }
+@media (min-width: 640px) {
+  .card-2 {
+    padding: 49px 38px 48px;
+  }
+}
 .card-2 .card__text {
   color: var(--color-font-3);
 }
@@ -359,6 +369,12 @@ h4 {
 .card-2 .card__img {
   top: -33px;
   left: 30px;
+}
+@media (min-width: 640px) {
+  .card-2 {
+    padding-top: 61px;
+    padding-bottom: 60px;
+  }
 }
 
 .header {
@@ -510,21 +526,30 @@ h4 {
   }
 }
 
-.cards {
+.pricing {
   margin: auto 24px 144px;
 }
-.cards__title {
+.pricing__title {
   text-align: center;
   margin-bottom: 27px;
 }
-.cards__text {
+.pricing__text {
   text-align: center;
-  margin-bottom: 56px;
+  max-width: 573px;
+  margin: auto auto 56px;
 }
-.cards__wrapper {
+.pricing__wrapper {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   gap: 32px;
+  max-width: 445px;
+  margin: auto;
+}
+@media (min-width: 640px) {
+  .pricing {
+    margin-bottom: 119px;
+  }
 }
 
 .form {

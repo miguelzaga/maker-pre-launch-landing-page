@@ -34,6 +34,10 @@
             position: absolute;
         }
     }
+
+    @include a.breakpoint(a.$md){
+        padding: 49px 38px 48px;
+    }
 }
 
 .card-1 {
@@ -86,5 +90,10 @@
             top: -33px;
             left: 30px;
         }
+    }
+
+    @include a.breakpoint(a.$md){
+        padding-top: 61px; 
+        padding-bottom: 60px; 
     }
 }
