@@ -29,8 +29,7 @@
         border-radius: 45px;
 
         &-svg {
-            width: 66px;
-            height: 80px;
+            width: 50%;
         }
     }
 
@@ -38,6 +37,7 @@
         margin-bottom: 11px;
     }
 
+    // Tablet
     @include a.breakpoint(a.$md) {
         margin: auto 98px 141px 97px;
         gap: 59px;
@@ -56,6 +56,45 @@
 
         &__img {
             margin: 0;
+        }
+    }
+
+    // Desktop
+    @include a.breakpoint(a.$lg) {
+        // margin: auto 98px 141px 97px;
+        // gap: 59px;
+        flex-direction: row;
+        margin: 0 0 202px 0;
+        height: 383px;
+        gap: 30px;
+
+        &__cell {
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 48px;
+            // height: 335px;
+            //     text-align: left;
+            &:nth-child(2n - 1) {
+                align-self: flex-start;
+            }
+            &:nth-child(2n) {
+                align-self: flex-end;
+            }
+        }
+
+        &__img {
+            margin-right: auto;
+            min-width: 160px;
+            height: 164px;
+            // border-radius: 45px;
+
+            &-svg {
+                width: fit-content;
+            }
+        }
+
+        &__title {
+            margin-bottom: 23px;
         }
     }
 }

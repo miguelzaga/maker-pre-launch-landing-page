@@ -562,8 +562,7 @@ h4 {
   border-radius: 45px;
 }
 .grid__img-svg {
-  width: 66px;
-  height: 80px;
+  width: 50%;
 }
 .grid__title {
   margin-bottom: 11px;
@@ -586,6 +585,36 @@ h4 {
   }
   .grid__img {
     margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    flex-direction: row;
+    margin: 0 0 202px 0;
+    height: 383px;
+    gap: 30px;
+  }
+  .grid__cell {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .grid__cell:nth-child(2n-1) {
+    align-self: flex-start;
+  }
+  .grid__cell:nth-child(2n) {
+    align-self: flex-end;
+  }
+  .grid__img {
+    margin-right: auto;
+    min-width: 160px;
+    height: 164px;
+  }
+  .grid__img-svg {
+    width: fit-content;
+  }
+  .grid__title {
+    margin-bottom: 23px;
   }
 }
 
