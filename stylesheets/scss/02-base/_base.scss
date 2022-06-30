@@ -6,3 +6,13 @@ body {
     color: var(--color-font-1);
     overflow-x: hidden;
 }
+
+.wrapper {
+    max-width: calc(1024px - 48px);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include a.breakpoint(a.$x-lg){
+        max-width: 1110px;
+    }
+}
