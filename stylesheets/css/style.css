@@ -501,11 +501,9 @@ h4 {
   }
   .grid__cell:nth-child(2n-1) {
     align-self: flex-end;
-    outline: solid red 1px;
   }
   .grid__cell:nth-child(2n) {
     align-self: flex-start;
-    outline: solid green 1px;
   }
   .grid__img {
     margin: 0;

@@ -48,11 +48,9 @@
             text-align: left;
             &:nth-child(2n - 1) {
                 align-self: flex-end;
-                outline: solid red 1px;
             }
             &:nth-child(2n) {
                 align-self: flex-start;
-                outline: solid green 1px;
             }
         }
 
