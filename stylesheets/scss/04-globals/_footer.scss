@@ -7,8 +7,9 @@
 
     &__title {
         text-align: center;
-        max-width: 250px;
+        max-width: 230px;
         margin: auto auto 31px;
+        padding-top: 2px;
     }
 
     &__bg {
@@ -18,5 +19,20 @@
         max-width: 584px;
         top: 0;
         left: calc((584px - 100%) / (-2));
+    }
+
+    @include a.breakpoint(a.$md) {
+        margin-bottom: 105px;
+
+        &__title {
+            padding-top: 15px;
+            margin-bottom: 29px;
+            max-width: unset;
+        }
+
+        &__bg {
+            max-width: 1022px;
+            left: calc((1022px + 240px - 100%) / (-2))
+        }
     }
 }

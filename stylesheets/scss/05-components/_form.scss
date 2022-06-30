@@ -4,4 +4,12 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 24px;
+
+    @include a.breakpoint(a.$md) {
+        max-width: 476px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
+        gap: 16px;
+    }
 }

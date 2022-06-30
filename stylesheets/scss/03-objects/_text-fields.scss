@@ -1,6 +1,8 @@
 @use "../01-abstracts/" as a;
 
 .text-field {
+    width: 100%;
+    
     &__input {
         color: var(--color-font-1);
         background-color: var(--color-bg-2);

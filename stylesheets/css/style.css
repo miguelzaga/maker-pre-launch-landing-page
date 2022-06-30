@@ -241,6 +241,9 @@ h4 {
   color: var(--color-font-1);
 }
 
+.text-field {
+  width: 100%;
+}
 .text-field__input {
   color: var(--color-font-1);
   background-color: var(--color-bg-2);
@@ -395,8 +398,9 @@ h4 {
 }
 .footer__title {
   text-align: center;
-  max-width: 250px;
+  max-width: 230px;
   margin: auto auto 31px;
+  padding-top: 2px;
 }
 .footer__bg {
   position: absolute;
@@ -405,6 +409,20 @@ h4 {
   max-width: 584px;
   top: 0;
   left: calc((584px - 100%) / -2);
+}
+@media (min-width: 640px) {
+  .footer {
+    margin-bottom: 105px;
+  }
+  .footer__title {
+    padding-top: 15px;
+    margin-bottom: 29px;
+    max-width: unset;
+  }
+  .footer__bg {
+    max-width: 1022px;
+    left: calc((1262px - 100%) / -2);
+  }
 }
 
 .hero {
@@ -556,6 +574,15 @@ h4 {
   display: flex;
   flex-flow: column nowrap;
   gap: 24px;
+}
+@media (min-width: 640px) {
+  .form {
+    max-width: 476px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    gap: 16px;
+  }
 }
 
 .br::after {
