@@ -3,13 +3,19 @@
 .grid {
     margin: auto 24px 144px;
     display: flex;
-    flex-flow: column nowrap;    
+    flex-flow: column nowrap;
     gap: 56px;
 
     &__cell {
         display: flex;
         flex-flow: column nowrap;
         text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__container {
+        max-width: 340px;
     }
 
     &__img {
@@ -17,11 +23,11 @@
         justify-content: center;
         align-items: center;
         background-color: var(--color-bg-2);
-        margin: auto auto 32px;
-        width: 120px;
+        margin: 0 auto 32px;
+        min-width: 120px;
         height: 124px;
         border-radius: 45px;
-        
+
         &-svg {
             width: 66px;
             height: 80px;
@@ -30,5 +36,28 @@
 
     &__title {
         margin-bottom: 11px;
+    }
+
+    @include a.breakpoint(a.$md) {
+        margin: auto 98px 141px 97px;
+        gap: 59px;
+
+        &__cell {
+            flex-direction: row;
+            gap: 55px;
+            text-align: left;
+            &:nth-child(2n - 1) {
+                align-self: flex-end;
+                outline: solid red 1px;
+            }
+            &:nth-child(2n) {
+                align-self: flex-start;
+                outline: solid green 1px;
+            }
+        }
+
+        &__img {
+            margin: 0;
+        }
     }
 }

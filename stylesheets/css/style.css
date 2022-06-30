@@ -178,7 +178,7 @@ body,
 button,
 input {
   font-family: "Manrope", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.9375rem;
   line-height: 25px;
 }
@@ -466,14 +466,19 @@ h4 {
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid__container {
+  max-width: 340px;
 }
 .grid__img {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-bg-2);
-  margin: auto auto 32px;
-  width: 120px;
+  margin: 0 auto 32px;
+  min-width: 120px;
   height: 124px;
   border-radius: 45px;
 }
@@ -483,6 +488,28 @@ h4 {
 }
 .grid__title {
   margin-bottom: 11px;
+}
+@media (min-width: 640px) {
+  .grid {
+    margin: auto 98px 141px 97px;
+    gap: 59px;
+  }
+  .grid__cell {
+    flex-direction: row;
+    gap: 55px;
+    text-align: left;
+  }
+  .grid__cell:nth-child(2n-1) {
+    align-self: flex-end;
+    outline: solid red 1px;
+  }
+  .grid__cell:nth-child(2n) {
+    align-self: flex-start;
+    outline: solid green 1px;
+  }
+  .grid__img {
+    margin: 0;
+  }
 }
 
 .cards {
