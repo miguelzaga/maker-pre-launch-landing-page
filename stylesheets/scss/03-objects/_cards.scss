@@ -24,7 +24,7 @@
             gap: 12px;
             list-style-image: url(../../assets/icon-check.svg);
             padding-inline-start: 25px;
-            
+
             &-li {
                 padding-inline-start: 10px;
             }
@@ -35,8 +35,14 @@
         }
     }
 
-    @include a.breakpoint(a.$md){
+    @include a.breakpoint(a.$md) {
         padding: 49px 38px 48px;
+
+        & .card {
+            &__text {
+                margin-bottom: 24px;
+            }
+        }
     }
 }
 
@@ -92,8 +98,8 @@
         }
     }
 
-    @include a.breakpoint(a.$md){
-        padding-top: 61px; 
-        padding-bottom: 60px; 
+    @include a.breakpoint(a.$md) {
+        padding-top: 61px;
+        padding-bottom: 60px;
     }
 }

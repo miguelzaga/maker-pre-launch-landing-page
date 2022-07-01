@@ -322,6 +322,9 @@ h4 {
   .card-1 {
     padding: 49px 38px 48px;
   }
+  .card-1 .card__text {
+    margin-bottom: 24px;
+  }
 }
 .card-1 .card__text {
   color: var(--color-font-1);
@@ -369,6 +372,9 @@ h4 {
 @media (min-width: 640px) {
   .card-2 {
     padding: 49px 38px 48px;
+  }
+  .card-2 .card__text {
+    margin-bottom: 24px;
   }
 }
 .card-2 .card__text {
@@ -641,6 +647,27 @@ h4 {
 @media (min-width: 640px) {
   .pricing {
     margin-bottom: 119px;
+  }
+}
+@media (min-width: 1024px) {
+  .pricing {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pricing__title {
+    margin-bottom: 24px;
+  }
+  .pricing__text {
+    margin-bottom: 72px;
+  }
+  .pricing__wrapper {
+    flex-direction: row;
+    gap: 30px;
+    max-width: unset;
+  }
+  .pricing__card-1, .pricing__card-2 {
+    max-width: 445px;
   }
 }
 
