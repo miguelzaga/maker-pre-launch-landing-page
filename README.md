@@ -59,5 +59,6 @@ Users should be able to:
 
 ## Author
 
+- Website - [Miguel Zapata](https://www.miguezaga.online)
 - Frontend Mentor - [@miguelzaga](https://www.frontendmentor.io/profile/miguelzaga)
 
