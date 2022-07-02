@@ -3,13 +3,13 @@
 .header {
     text-align: center;
     margin: 40px auto 65.5px;
-    
+
     @include a.breakpoint(a.$md) {
         text-align: left;
         margin: 48px auto 77px 39px;
     }
 
-    @include a.breakpoint(a.$lg){
+    @include a.breakpoint(a.$lg) {
         margin: 81px 0 114px;
     }
 }
