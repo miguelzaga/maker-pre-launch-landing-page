@@ -29,11 +29,9 @@
 
     @include a.breakpoint(a.$lg) {
         max-width: 920px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto auto 151px;
 
         &__title {
-            //     text-align: center;
             margin-bottom: 24px;
         }
 
@@ -42,13 +40,9 @@
         }
 
         &__wrapper {
-            //     display: flex;
             flex-direction: row;
-            //     flex-flow: column nowrap;
-            //     align-items: center;
             gap: 30px;
             max-width: unset;
-            //     margin: auto;
         }
 
         &__card-1,

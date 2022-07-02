@@ -434,6 +434,7 @@ h4 {
 }
 @media (min-width: 640px) {
   .footer {
+    height: 140px;
     margin-bottom: 105px;
   }
   .footer__title {
@@ -444,6 +445,20 @@ h4 {
   .footer__bg {
     max-width: 1022px;
     left: calc((1262px - 100%) / -2);
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    height: 228px;
+    margin-bottom: 117px;
+  }
+  .footer__title {
+    padding-top: 52px;
+    margin-bottom: 42px;
+  }
+  .footer__bg {
+    max-width: 1665px;
+    left: calc((1905px - 100%) / -2);
   }
 }
 
@@ -652,8 +667,7 @@ h4 {
 @media (min-width: 1024px) {
   .pricing {
     max-width: 920px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto auto 151px;
   }
   .pricing__title {
     margin-bottom: 24px;

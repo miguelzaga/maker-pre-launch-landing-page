@@ -21,7 +21,9 @@
         left: calc((584px - 100%) / (-2));
     }
 
+    // Tablet
     @include a.breakpoint(a.$md) {
+        height: 140px;
         margin-bottom: 105px;
 
         &__title {
@@ -33,6 +35,22 @@
         &__bg {
             max-width: 1022px;
             left: calc((1022px + 240px - 100%) / (-2))
+        }
+    }
+
+    // Desktop
+    @include a.breakpoint(a.$lg) {
+        height: 228px;
+        margin-bottom: 117px;
+
+        &__title {
+            padding-top: 52px;
+            margin-bottom: 42px;
+        }
+
+        &__bg {
+            max-width: 1665px;
+            left: calc((1665px + 240px - 100%) / (-2))
         }
     }
 }
